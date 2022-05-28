@@ -1,5 +1,5 @@
 class Student:
-    # [assignment] Skeleton class. Add your code here
+    # class initialization
     def __init__(self, name, age, tracks, score):
         self.name = name
         self.age = age
@@ -17,15 +17,12 @@ class Student:
     
     def add_track(self, tracks):
         # 1. Insert the new track "UI/UX" into the list.
-        # 2. len(self.tracks) returns the number of items in the array
-        #    as the index(location) to add the new track.
+        # 2. len(self.tracks) returns the number of items in the array as the index(location) to add the new track.
 
-        # print(tracks)
         self.tracks.insert(len(self.tracks), tracks)
         print(self.tracks)
         
     def get_score(self):
-        
         print("Score is:", self.score, "\n")
 
 # Instance of the class -> Student
